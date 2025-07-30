@@ -2,6 +2,8 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 st.title("Penguine Species Prediction ML App")
 st.info("This is end-to-end Machine Learning App")
@@ -29,6 +31,11 @@ print (inf)
 
 with st.expander("Data Visualization"):
   st.scatter_chart(data=df, x = "bill_length_mm", y = "body_mass_g", color = "species")
+  st.write("Box Plot: Body Mass by Species")
+    fig, ax = plt.subplots()
+    sns.boxplot(data=df, x="species", y="body_mass_g", ax=ax)
+    st.pyplot(fig)
+  
 
 with st.expander("Input data"):
   pass
