@@ -24,10 +24,8 @@ des = df. describe()
 des
 
 st.write("More information about Data")
-info = df.info()
-info
-
-
+inf = df.info()
+print inf
 
 with st.expander("Data Visualization"):
   pass
@@ -45,5 +43,5 @@ with st.sidebar:
   bill_depth_mm = st.slider("Bill depth (mm)",13.1,21.5,17.2)
   flipper_length_mm = st.slider("Flipper length (mm)",172.0,231.0,201.0)
   body_mass_g = st.slider("Body mass (g)",2700.0,6300.0,4207.0)
-  gender = st.selectbox("Gender",("male","female"))
+  gender = st.selectbox("Gender",("male","female","That's it"))
 
