@@ -25,7 +25,7 @@ des
 
 st.write("More information about Data")
 inf = df.info()
-print inf
+print (inf)
 
 with st.expander("Data Visualization"):
   pass
