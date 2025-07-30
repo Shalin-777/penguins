@@ -19,6 +19,12 @@ st.write("Target Variables")
 y_raw = df.species
 y_raw
 
+st.write("Descriptive Statistics")
+des = df. describe()
+des
+
+
+
 
 with st.expander("Data Visualization"):
   pass
