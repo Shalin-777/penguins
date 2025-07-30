@@ -30,12 +30,14 @@ inf = df.info()
 print (inf)
 
 with st.expander("Data Visualization"):
-  st.scatter_chart(data=df, x = "bill_length_mm", y = "body_mass_g", color = "species")
-  st.write("Box Plot: Body Mass by Species")
+    st.scatter_chart(data=df, x="bill_length_mm", y="body_mass_g", color="species")
+    
+    st.write("Box Plot: Body Mass by Species")
     fig, ax = plt.subplots()
     sns.boxplot(data=df, x="species", y="body_mass_g", ax=ax)
     st.pyplot(fig)
-  
+
+
 
 with st.expander("Input data"):
   pass
