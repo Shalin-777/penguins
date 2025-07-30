@@ -22,7 +22,8 @@ y_raw
 st.write("Descriptive Statistics")
 des = df. describe()
 des
-
+info = df.info()
+info
 
 
 
